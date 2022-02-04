@@ -1,6 +1,82 @@
 * {
     box-sizing: border-box;
 }
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /*чтобы установить ширину и высоту остальных эл в процентах*/
+    width: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.44;
+}
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 865px;
+    padding: 0 5px;
+    margin: 0 auto;
+    position: relative;
+}
+.header__container {
+    max-width: 1032px;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_list {
+    display: flex;
+}
+.nav_item {
+    margin-left: 33px;
+    font-weight: bold;
+}
+.about__icon {
+    height: 243px;
+    width: 243px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(/img/man.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 0px;
+    top: 210px;
+    box-shadow: 0 13px #EDF7FA;
+}
+.about__info {
+    position: absolute;
+    top: 228px;
+    left: 0px;
+}
+.about__text {
+    margin-top: 40px;
+    font-size: 16px;
+}
+.resume {
+    position: absolute;
+    top: 477px;
+    left: 0;
+    width: 208px;
+    height: 47px;
+    border: none;
+    background-color: #FF6464;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 2px;
 }
