@@ -41,6 +41,8 @@ h1,h2,h3 {
 }
 .nav_list {
     display: flex;
+    position: relative;
+    top: 27px;
 }
 .nav_item {
     margin-left: 33px;
@@ -60,9 +62,12 @@ h1,h2,h3 {
     box-shadow: 0 13px #EDF7FA;
 }
 .about__info {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
     top: 228px;
-    left: 0px;
 }
 .about__text {
     margin-top: 40px;
@@ -79,4 +84,7 @@ h1,h2,h3 {
     font-size: 20px;
     color: #ffffff;
     border-radius: 2px;
+}
+.resume:hover {
+    cursor: pointer;
 }
