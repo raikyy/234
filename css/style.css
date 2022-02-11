@@ -89,7 +89,39 @@ h1,h2,h3 {
     height: 100%;
     object-fit: cover;
 }
-
-
-
-
+.recent-posts {
+    background-color: #EDF7FA;
+}
+.recent-posts__top {
+    min-width: 856px;
+    display: flex;
+    margin-bottom: 22px;
+}
+.recent-posts__title {
+    margin-right: 656px;
+    font-size: 22px;
+}
+.recent-posts__link {
+    color: #00A8CC;
+    font-size: 16px;
+}
+.recent-posts__articles {
+    display: flex;
+}
+.recent-posts__article {
+    width: 418px;
+    height: 295px;
+    background-color: #ffffff;
+    padding-left: 22px;
+    margin-left: 20px;
+    padding-top: 24px;
+}
+.recent-posts__sub-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+.recent-posts__date {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 11px;
+}
