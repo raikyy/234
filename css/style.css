@@ -132,3 +132,48 @@ h1,h2,h3 {
 .recent-posts__separator {
     margin: 0px 26px;
 }
+.title-section {
+    font-size: 22px;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+.work {
+    height: 204px;
+    display: flex;
+    margin-bottom: 45px;
+}
+.work:last-child {
+    margin-bottom: 30px;
+}
+.work__img {
+    height: 180px;
+    width: 246px;
+    border-radius: 6px;
+}
+.work-info {
+    padding-left: 18px;
+}
+.work__title {
+    font-weight: 700;
+    font-size: 30px;
+}
+.work__subtitle {
+    display: flex;
+    padding-bottom: 22px;
+}
+.work__date {
+    height: 25px;
+    width: 62px;
+    background-color: #142850;
+    color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.work__category {
+    padding-left: 25px;
+    font-size: 18px;
+    color: #8695A4;
+}
