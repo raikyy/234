@@ -38,6 +38,7 @@ h1,h2,h3 {
     display: flex;
     justify-content: flex-end;
 }
+
 .nav_list {
     display: flex;
     margin-top: 27px;
@@ -45,6 +46,48 @@ h1,h2,h3 {
 .nav_item {
     margin-left: 33px;
     font-weight: bold;
+}
+.header__burger {
+    width: 30px;
+    height: 20px;
+    display: none;
+    align-items: center;
+}
+.header__burger-el {
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: relative;
+}
+.header__burger-el::before,
+.header__burger-el::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: absolute;
+}
+
+.header__burger-el::before {
+    top: -9px;
+}
+
+.header__burger-el::after {
+    bottom: -9px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 12px;
+    }
+    .nav {
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+        margin-right: 13px;
+    }
 }
 .h1 {
     font-size: 44px;
@@ -56,6 +99,25 @@ h1,h2,h3 {
 }
 .about__container {
     display: flex;
+}
+@media (max-width: 480px) {
+    .about__container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about__title {
+        line-height: 1.25;
+        padding-top: 35px;
+    }
+    .about__info {
+        text-align: center;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .about__avatar {
+        width: 170px;
+        height: 170px;
+    }
 }
 .about__info {
     padding-right: 12.3%;
@@ -132,6 +194,27 @@ h1,h2,h3 {
 .recent-posts__separator {
     margin: 0px 26px;
 }
+@media (max-width: 480px) {
+    .recent-posts {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .recent-posts__top {
+        justify-content: center;
+        margin-bottom: 19px;
+    }
+    .recent-posts__link {
+        display: none;
+    }
+    .recent-posts__articles {
+        flex-direction: column;
+    }
+    .recent-posts__article {
+        padding: 12px 20px 22px;
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+}
 .title-section {
     font-size: 22px;
     padding-top: 35px;
@@ -176,6 +259,13 @@ h1,h2,h3 {
     padding-left: 25px;
     font-size: 18px;
     color: #8695A4;
+}
+.footer {
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
 }
 .icons {
     display: flex;
