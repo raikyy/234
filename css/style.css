@@ -31,6 +31,11 @@ h3 {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
 }
 .container {
   max-width: 865px;
@@ -300,32 +305,48 @@ h3 {
   }
 }
 .footer {
-  min-height: 128px;
+  padding: 51px 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
 }
-.icons {
+.footer__social-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.icons__link {
-  display: block;
-  height: 100%;
-}
-.icons__el {
+.footer__social-item {
   margin-right: 35px;
+  width: 30px;
+  height: 30px;
 }
-.icons__el:last-child {
-  margin-right: 0px;
+.footer__social-item:last-child {
+  margin-right: 0;
 }
-.text {
+.footer__social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0px;
+  height: 100%;
+  width: 100%;
+}
+.vk {
+  background-image: url(../img/footer/vk.png);
+}
+.ok {
+  background-image: url(../img/footer/ok.png);
+}
+.github {
+  background-image: url(../img/footer/github.png);
+}
+.tg {
+  background-image: url(../img/footer/telegram.png);
+}
+.footer__copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25px;
+  margin-top: 25px;
   padding-bottom: 55px;
 }
 .nav__blog {
@@ -395,8 +416,8 @@ h3 {
     line-height: 38px;
   }
   .blog__date {
-      padding-top: 5px;
-      padding-bottom: 17px;
+    padding-top: 5px;
+    padding-bottom: 17px;
   }
   .blog__date-el {
     font-size: 16px;
@@ -413,5 +434,26 @@ h3 {
   .blog__text {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+.work-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243d;
+  padding-bottom: 50px;
+  padding-top: 90px;
+}
+@media (max-width: 480px) {
+  .featured__work {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 100px;
+    padding-top: 25px;
+    max-height: 1100px;
+  }
+  .work-title {
+    padding-bottom: 15px;
   }
 }
